@@ -1,8 +1,7 @@
--name: varibles from inventory
- hosts: localhost
- vars:
+- name: varibles from inventory
+  hosts: mongodb
 
- tasks:
-  name: print variables
-  ansible.builtin.debug:
-  msg: "name: {{Name}}, Course: {{Course}}, Duration: {{Duration}}"
+  tasks:
+   name: print variables
+   ansible.builtin.debug:
+    msg: "name: {{Name}}, Course: {{Course}}, Duration: {{Duration}}"

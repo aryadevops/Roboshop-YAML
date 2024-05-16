@@ -1,8 +1,8 @@
 [mongodb]
 172.31.23.248
 
-[mongodb_variables]
+[mongodb:vars]
 
 Name= Shivakumar
-Corse= Aws Devops
+Course= Aws Devops
 Duration= 3Months
