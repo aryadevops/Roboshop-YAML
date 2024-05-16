@@ -1,13 +1,13 @@
--name: creating variables
- hosts: localhost
- vars:
-  Name: Shivakrishna
-  Topic: Aws Devops
-  Duration: 3months
- tasks:
-  -name: Printing description
-   ansible.builtin.debug:
-   msg: "Course details :"
-  -name: Printing variables
-   ansible.builtin.debug:
-   msg: "Tutor is {{Name}}, Technology is {{Topic}}, To complete the course in {{Duration}}" 
+- name: creating variables
+  hosts: mongodb
+  vars:
+   Name: Shivakrishna
+   Topic: Aws Devops
+   Duration: 3months
+  tasks:
+  - name: Printing description
+    ansible.builtin.debug:
+     msg: "Course details :"
+  - name: Printing variables
+    ansible.builtin.debug:
+     msg: "Tutor is {{Name}}, Technology is {{Topic}}, To complete the course in {{Duration}}" 
