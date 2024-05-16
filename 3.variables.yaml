@@ -1,0 +1,13 @@
+-name: Printing Varibles
+ hosts: localhost
+ vars:
+  COURSE: Aws Devops
+  TRAINER: Shiva kumar
+  DURATION: 3months
+ tasks:
+  -name: Printing hellow world
+   ansible.builtin.debug:
+    msg: "Hellow im learning devops"
+  -name: Print Variables 
+   ansible.builtin.debug:
+    msg: "Tutor name : {{TRAINER}}, Course name : {{COURSE}}, Duration : {{DURATION}}"
