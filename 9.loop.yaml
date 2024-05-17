@@ -2,7 +2,7 @@
   hosts: mongodb
 
   tasks:
-  - Name: printing basic details
+  - name: printing basic details
     ansible.builtin.debug:
      msg: "printing Name: {{item.Name}}, Age :{{item.age}} " 
 
