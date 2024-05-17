@@ -3,5 +3,5 @@
 
   tasks:
   - name: To check weather Robosho user is there or not
-    ansible.builtin.commond: id roboshop
-    
+    ansible.builtin.command: id roboshop
+    register: out
