@@ -1,10 +1,13 @@
 - name: Loops creation
   hosts: mongodb
-  loop:
-  - {Name: Shiva, age: 35}
-  - {Name: Arun, age: 30}
-  - {Name: Raj, age: 20}
+
   tasks:
   - Name: printing basic details
     ansible.builtin.debug:
-     msg: "printing Name: {{item.Name}}, Age :{{item.age}} "    
+     msg: "printing Name: {{item.Name}}, Age :{{item.age}} " 
+
+
+    loop:
+    - {Name: Shiva, age: 35}
+    - {Name: Arun, age: 30}
+    - {Name: Raj, age: 20}
