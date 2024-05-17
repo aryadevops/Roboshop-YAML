@@ -5,3 +5,10 @@
   - name: To check weather Robosho user is there or not
     ansible.builtin.command: id roboshop
     register: out
+    ignore_errors: true
+
+  - name: print the commond output
+    ansible.builtin.debug:
+     msg: "Output is : {{out}}"
+
+  
